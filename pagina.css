@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("img/background1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* navegação */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 20px 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+}
+
+.info a {
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.info a:hover {
+  color: #4041bf;
+}
+
+/* Seja seu melhor */
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.titulo {
+  color: #fff;
+  font-size: 5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+}
+
+.container-b {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botao {
+  display: inline-block;
+  padding: 15px 100px;
+  background-color: #4041bf;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.botao:hover {
+  background-color: #252572;
+  transform: scale(1.08);
+}
+
+/* Sobre a nossa empresa */
+#body-site {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 50px; /* Espaço entre o texto e as imagens */
+  padding: 50px;
+  background-color: #141414;
+}
+
+#container-texto {
+  flex: 1;
+  max-width: 500px;
+}
+
+#container-texto h3 {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.paragrafo-texto {
+  color: #fff;
+}
+
+.container-img {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+}
+
+.container-img {
+  display: flex;
+  gap: 20px;
+  flex: 0 1 auto;
+}
+
+.img2,
+.img3 {
+  width: 200px;
+  height: 300px;
+  border-radius: 200px;
+  background-position: center;
+  background-image: url("img/man.jpg");
+  background-size: cover;
+}
+
+.img3 {
+  margin-top: 50px; /* Desloca a segunda imagem para baixo */
+  background-image: url("img/woman.jpg");
+}
+
+/* O que oferecemos */
+#body-site2 {
+  padding: 50px;
+  text-align: center; /* Centraliza o texto */
+  background-color: #141414;
+  color: #fff;
+}
+
+#body-site2 .texto2 {
+  font-size: 4rem;
+}
+
+.container-img2 {
+  display: flex;
+  justify-content: center; /* Centraliza o grupo na tela */
+  gap: 20px; /* Espaço entre as fotos */
+  padding: 50px;
+}
+
+.img4,
+.img5,
+.img6 {
+  width: 300px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 200px 200px 0px 0px;
+  -moz-border-radius: 200px 200px 0px 0px;
+  -webkit-border-radius: 200px 200px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo do texto sobre a imagem */
+.img4 span,
+.img5 span,
+.img6 span {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Melhora a leitura */
+}
+
+.img4 {
+  background-image: url("img/gym.jpg");
+}
+
+.img5 {
+  background-image: url("img/peoples.jpg");
+}
+
+.img6 {
+  background-image: url("img/personal.jpg");
+}
+
+/* Footer */
+#body-site3 {
+  width: 100%;
+  font-family: sans-serif;
+}
+
+.image-section {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("img/background2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.image-section h3 {
+  color: #fff;
+  font-size: 4rem;
+  max-width: 400px;
+  margin: 100px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Melhora a leitura */
+  text-transform: uppercase;
+}
+
+.info-section {
+  background-color: #fff;
+  padding: 20px 5%;
+  display: flex; /* Faz os <p> ficarem um ao lado do outro */
+  justify-content: space-between; /* Distribui o espaço entre eles */
+  align-items: center;
+}
+
+.info-section p {
+  font-size: 0.9rem;
+  color: #000;
+}
+
+/* Efeito houver nas imagens */
+.img2,
+.img3,
+.img4,
+.img5,
+.img6 {
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.img2:hover,
+.img3:hover,
+.img4:hover,
+.img5:hover,
+.img6:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.6);
+}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/cadastro.css" />
+    <title>Tela de cadastro</title>
+  </head>
+  <body>
+    <section class="section">
+      <h3 class="titulo">Faça seu cadastro</h3>
+      <form
+        onsubmit="
+          event.preventDefault();
+          Entrar();
+        "
+      >
+        <div class="container-inputs">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Usuario:"
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Senha:"
+          />
+          <input
+            type="password"
+            name="passwordConfirmar"
+            id="passwordConfirmar"
+            placeholder=" Confirmar Senha:"
+          />
+        </div>
+        <div class="container">
+          <button type="submit">Login</button>
+        </div>
+      </form>
+    </section>
+    <script src="assets/js/cadastro.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style/login.css" />
+    <title>Tela de login</title>
+  </head>
+  <body>
+    <section class="section">
+      <h3 class="titulo">Faça seu login</h3>
+      <form
+        onsubmit="
+          event.preventDefault();
+          Entrar();
+        "
+      >
+        <div class="container-inputs">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Usuario:"
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Senha:"
+          />
+        </div>
+        <div class="link">
+          <p>
+            Não tem conta?<a href="../cadastro/cadastro.html"> Clique Aqui</a>
+          </p>
+        </div>
+        <div class="container">
+          <button type="submit">Entrar</button>
+        </div>
+      </form>
+    </section>
+    <script src="assets/js/login.js"></script>
+  </body>
+</html>

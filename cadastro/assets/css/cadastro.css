@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #121212, #1c1c1c);
+}
+
+/* CONTAINER PRINCIPAL */
+.section {
+  background-color: #1e1e1e;
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* TÍTULO */
+.titulo {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+/* INPUTS */
+.container-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 50px;
+  background-color: #2c2c2c;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border: 2px solid #4041bf;
+  background-color: #333;
+}
+
+/* CONTAINER DO BOTÃO */
+.container {
+  margin-top: 25px; /* Espaço entre inputs e botão */
+}
+
+/* BOTÃO */
+.container button {
+  width: 100%;
+  background-color: #4041bf;
+  color: #fff;
+  padding: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 50px;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background-color: #252572;
+  transform: translateY(-3px);
+  box-shadow: 0px 10px 20px rgba(64, 65, 191, 0.4);
+}
