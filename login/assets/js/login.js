@@ -5,7 +5,7 @@ function Entrar() {
   var senha = document.getElementsByName("password")[0].value;
 
   if (usuario == "oimatth_" && senha == "1704") {
-    window.location = "../pagina.html";
+    window.location = "../index.html";
     done = 1;
   }
   

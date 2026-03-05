@@ -28,7 +28,7 @@ cd landing-page-academia
  ┣ 📂 login
  ┃ ┣ 📜 login.html
  ┃ ┗ 📂 assets
- ┣ 📜 pagina.html
+ ┣ 📜 index.html
  ┣ 📜 pagina.css
 ```
 
